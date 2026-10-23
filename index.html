@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A stylish calculator built with HTML, CSS and JavaScript for CodeAlpha internship Task 2.">
+  <title>CodeAlpha Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <div class="brand-mark">C</div>
+      <div>
+        <p class="eyebrow">CODEALPHA • TASK 2</p>
+        <h1>Smart Calculator</h1>
+      </div>
+    </header>
+
+    <section class="calculator" aria-label="Calculator">
+      <div class="display" aria-live="polite">
+        <div id="expression" class="expression">Ready to calculate</div>
+        <div id="result" class="result">0</div>
+      </div>
+
+      <div class="keypad">
+        <button class="key utility" data-action="clear" aria-label="Clear all">AC</button>
+        <button class="key utility" data-action="delete" aria-label="Delete last character">DEL</button>
+        <button class="key operator" data-value="%" aria-label="Modulo">%</button>
+        <button class="key operator" data-value="÷" aria-label="Divide">÷</button>
+
+        <button class="key" data-value="7">7</button>
+        <button class="key" data-value="8">8</button>
+        <button class="key" data-value="9">9</button>
+        <button class="key operator" data-value="×" aria-label="Multiply">×</button>
+
+        <button class="key" data-value="4">4</button>
+        <button class="key" data-value="5">5</button>
+        <button class="key" data-value="6">6</button>
+        <button class="key operator" data-value="−" aria-label="Subtract">−</button>
+
+        <button class="key" data-value="1">1</button>
+        <button class="key" data-value="2">2</button>
+        <button class="key" data-value="3">3</button>
+        <button class="key operator" data-value="+" aria-label="Add">+</button>
+
+        <button class="key utility" data-action="sign" aria-label="Change sign">+/−</button>
+        <button class="key" data-value="0">0</button>
+        <button class="key" data-value=".">.</button>
+        <button class="key equals" data-action="equals" aria-label="Calculate result">=</button>
+      </div>
+      <p class="hint"><span class="keyboard-icon">⌨</span> Keyboard supported · Esc to clear · Enter to calculate</p>
+    </section>
+
+    <footer>Built with <span>HTML</span>, <span>CSS</span> &amp; <span>JavaScript</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
